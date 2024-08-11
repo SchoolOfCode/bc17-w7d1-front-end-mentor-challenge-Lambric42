@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.category {
+    color: #b1a7a6;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    text-align: left;
+    
+}
+
+.product-title {
+    font-size: 28px;
+    color: hsl(212, 21%, 14%);
+    margin: 10px 0;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.pricing {
+    margin-bottom: 20px;
+}
+
+.current-price {
+    font-size: 28px;
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    margin-right: 10px;
+    font-family: "fraunces", sans-serif;
+}
+
+.old-price {
+    font-size: 16px;
+    color: grey;
+    text-decoration: line-through;
+}
+
+.add-to-cart {
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #20453a;
+}
+
+/* Media Query for desktop view */
+@media (min-width: 1440px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        max-width: 800px;
+        text-align: left;
+    }
+
+    .product-image {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 40px;
+        width: 50%;
+    }
+}
+
